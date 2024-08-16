@@ -1,0 +1,14 @@
+database - username
+    whene inserting data to the db if the username is is note uniqe it couses a crash
+    errmsg: 'E11000 duplicate key error collection: local_db.users index: username_1 dup key: { username: "medox22" }',
+    solution : the username field has been set to index or something
+        local_db> db.users.getIndexes()
+  
+        v: 2,
+        key: { username: 1 },
+        name: 'username_1',
+        background: true,
+        unique: true
+
+        db.users.dropIndex('username_1')
+------------------------------------------------------------------------------------------------

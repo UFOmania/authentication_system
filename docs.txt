@@ -1,0 +1,16 @@
+public :
+containes css and js files for ejs (html) files that will be sent to the client
+
+routes:
+js files to hundel request 
+
+views:
+standard name for a folder where the ejs will look for ejs files to send to the client
+
+ap.js:
+-start expess
+-manage routes
+
+
+.env :
+-store crusal data like port number
